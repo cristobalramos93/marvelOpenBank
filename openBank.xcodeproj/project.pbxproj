@@ -22,6 +22,7 @@
 		6F14347227CFEA6700697A77 /* CharactersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347127CFEA6700697A77 /* CharactersListRequest.swift */; };
 		6F14347427CFEAB700697A77 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347327CFEAB700697A77 /* Api.swift */; };
 		6F14347627CFEAD300697A77 /* CharactersListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347527CFEAD300697A77 /* CharactersListResponse.swift */; };
+		6F3C52C227D4438D002EBBC7 /* openBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3C52C127D4438D002EBBC7 /* openBankTests.swift */; };
 		6F56446B27D17C4800BB91EA /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56446A27D17C4800BB91EA /* CharacterCell.swift */; };
 		6F56446D27D17C7E00BB91EA /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F56446C27D17C7E00BB91EA /* CharacterCell.xib */; };
 		6F56447027D1805D00BB91EA /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56446F27D1805D00BB91EA /* ImageView+Extension.swift */; };
@@ -34,6 +35,16 @@
 		6FF1634827D034E7002DA6B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1634727D034E7002DA6B9 /* String+Extension.swift */; };
 		6FF1634A27D0351D002DA6B9 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1634927D0351D002DA6B9 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F3C52C327D4438D002EBBC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F14344B27CFE51700697A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F14345227CFE51700697A77;
+			remoteInfo = openBank;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6F089AB027D2FA1000306074 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -52,6 +63,8 @@
 		6F14347127CFEA6700697A77 /* CharactersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRequest.swift; sourceTree = "<group>"; };
 		6F14347327CFEAB700697A77 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		6F14347527CFEAD300697A77 /* CharactersListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListResponse.swift; sourceTree = "<group>"; };
+		6F3C52BF27D4438D002EBBC7 /* openBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3C52C127D4438D002EBBC7 /* openBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openBankTests.swift; sourceTree = "<group>"; };
 		6F56446A27D17C4800BB91EA /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		6F56446C27D17C7E00BB91EA /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		6F56446F27D1805D00BB91EA /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -74,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F3C52BC27D4438D002EBBC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6F14345527CFE51700697A77 /* openBank */,
+				6F3C52C027D4438D002EBBC7 /* openBankTests */,
 				6F14345427CFE51700697A77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				6F14345327CFE51700697A77 /* openBank.app */,
+				6F3C52BF27D4438D002EBBC7 /* openBankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,11 +128,11 @@
 			isa = PBXGroup;
 			children = (
 				6F089AB527D3160000306074 /* Lottie */,
+				6F14346C27CFE9BF00697A77 /* CharactersList */,
 				6F56447527D1993900BB91EA /* CharacterDetail */,
 				6F56447427D198FA00BB91EA /* Response */,
 				6F56447127D1948F00BB91EA /* Request */,
 				6F56446E27D1804400BB91EA /* Extensions */,
-				6F14346C27CFE9BF00697A77 /* CharactersList */,
 				6F14345627CFE51700697A77 /* AppDelegate.swift */,
 				6F14345827CFE51700697A77 /* SceneDelegate.swift */,
 				6F14345F27CFE51900697A77 /* Assets.xcassets */,
@@ -146,6 +168,14 @@
 				6F14346F27CFEA1900697A77 /* CharactersListPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6F3C52C027D4438D002EBBC7 /* openBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F3C52C127D4438D002EBBC7 /* openBankTests.swift */,
+			);
+			path = openBankTests;
 			sourceTree = "<group>";
 		};
 		6F56446927D17C1A00BB91EA /* ViewComponents */ = {
@@ -237,6 +267,24 @@
 			productReference = 6F14345327CFE51700697A77 /* openBank.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6F3C52BE27D4438D002EBBC7 /* openBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F3C52C527D4438D002EBBC7 /* Build configuration list for PBXNativeTarget "openBankTests" */;
+			buildPhases = (
+				6F3C52BB27D4438D002EBBC7 /* Sources */,
+				6F3C52BC27D4438D002EBBC7 /* Frameworks */,
+				6F3C52BD27D4438D002EBBC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F3C52C427D4438D002EBBC7 /* PBXTargetDependency */,
+			);
+			name = openBankTests;
+			productName = openBankTests;
+			productReference = 6F3C52BF27D4438D002EBBC7 /* openBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +297,10 @@
 				TargetAttributes = {
 					6F14345227CFE51700697A77 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					6F3C52BE27D4438D002EBBC7 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6F14345227CFE51700697A77;
 					};
 				};
 			};
@@ -269,6 +321,7 @@
 			projectRoot = "";
 			targets = (
 				6F14345227CFE51700697A77 /* openBank */,
+				6F3C52BE27D4438D002EBBC7 /* openBankTests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +339,13 @@
 				6F089AB727D3162D00306074 /* spiderman404.json in Resources */,
 				6F56447B27D19BFE00BB91EA /* CharacterDetailViewController.xib in Resources */,
 				6F56446D27D17C7E00BB91EA /* CharacterCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3C52BD27D4438D002EBBC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +376,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F3C52BB27D4438D002EBBC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3C52C227D4438D002EBBC7 /* openBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F3C52C427D4438D002EBBC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F14345227CFE51700697A77 /* openBank */;
+			targetProxy = 6F3C52C327D4438D002EBBC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6F14346127CFE51900697A77 /* LaunchScreen.storyboard */ = {
@@ -367,6 +443,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -428,6 +505,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -500,6 +579,52 @@
 			};
 			name = Release;
 		};
+		6F3C52C627D4438D002EBBC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGFM96H52V;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cristobalramos.com.openBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/openBank.app/openBank";
+			};
+			name = Debug;
+		};
+		6F3C52C727D4438D002EBBC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HGFM96H52V;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cristobalramos.com.openBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/openBank.app/openBank";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -517,6 +642,15 @@
 			buildConfigurations = (
 				6F14346827CFE51900697A77 /* Debug */,
 				6F14346927CFE51900697A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3C52C527D4438D002EBBC7 /* Build configuration list for PBXNativeTarget "openBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3C52C627D4438D002EBBC7 /* Debug */,
+				6F3C52C727D4438D002EBBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

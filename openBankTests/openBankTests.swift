@@ -6,27 +6,39 @@
 //
 
 import XCTest
+@testable import openBank
 
 class openBankTests: XCTestCase {
+    
+    override func setUpWithError() throws {}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    override func tearDownWithError() throws {}
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testExample() throws {}
 
     func testPerformanceExample() throws {
-        // This is an example of a performance test case.
         measure {
-            // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testGetOneCharacter() throws {
+        let expectation = XCTestExpectation(description: "Request of one character")
+        CharacterRequest(1009144).fetchCharacter { error, data in
+            XCTAssertNil(error)
+            XCTAssertEqual(1, data.count)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func testGetListCharacters() throws {
+        let expectation = XCTestExpectation(description: "Request of the list of characters")
+        CharactersListRequest().fetchCharactersList { error, data in
+            XCTAssertNil(error)
+            XCTAssertNotEqual(0, data.count)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
     }
 
 }

@@ -16,7 +16,7 @@ protocol CharactersListPresenterProtocol: AnyObject {
 class CharactersListPresenter {
     weak var view: CharactersListViewProtocol?
     
-    init(with view: CharactersListViewProtocol) {
+    init(_ view: CharactersListViewProtocol) {
         self.view = view
     }
 }

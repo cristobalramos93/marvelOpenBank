@@ -20,7 +20,7 @@ class CharactersListViewController: UIViewController {
     @IBOutlet private weak var errorView: AnimationView!
     
     private var charactersList: [CharactersList] = []
-    lazy var presenter = CharactersListPresenter(with: self)
+    lazy var presenter = CharactersListPresenter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
