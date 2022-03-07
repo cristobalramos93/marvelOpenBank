@@ -22,10 +22,6 @@ class CharacterDetailViewController: UIViewController {
         self.setViews()
         self.setImageView()
     }
-    
-    func getCharacter(_ character: Character) {
-        self.character = character
-    }
 }
 
 private extension CharacterDetailViewController {

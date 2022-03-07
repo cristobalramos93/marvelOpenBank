@@ -71,6 +71,7 @@ struct StoriesItemCharacter: Codable {
 
 enum TypeEnum: String, Codable {
     case cover = "cover"
+    case empty = ""
     case interiorStory = "interiorStory"
 }
 
