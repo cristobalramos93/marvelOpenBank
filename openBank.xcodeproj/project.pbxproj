@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6F089AB127D2FA1000306074 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F089AB027D2FA1000306074 /* UIView+Extension.swift */; };
 		6F089AB427D315D300306074 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6F089AB327D315D300306074 /* Lottie */; };
-		6F089AB727D3162D00306074 /* spiderman404.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F089AB627D3162D00306074 /* spiderman404.json */; };
-		6F089AB927D3165400306074 /* ironMan.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F089AB827D3165400306074 /* ironMan.json */; };
 		6F089ABB27D31EC200306074 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F089ABA27D31EC200306074 /* UIViewController+Extension.swift */; };
 		6F14345727CFE51700697A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14345627CFE51700697A77 /* AppDelegate.swift */; };
 		6F14345927CFE51700697A77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14345827CFE51700697A77 /* SceneDelegate.swift */; };
@@ -22,6 +20,7 @@
 		6F14347227CFEA6700697A77 /* CharactersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347127CFEA6700697A77 /* CharactersListRequest.swift */; };
 		6F14347427CFEAB700697A77 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347327CFEAB700697A77 /* Api.swift */; };
 		6F14347627CFEAD300697A77 /* CharactersListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347527CFEAD300697A77 /* CharactersListResponse.swift */; };
+		6F258E6627D6118A005159CF /* spiderman404.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F258E6527D6118A005159CF /* spiderman404.json */; };
 		6F3C52C227D4438D002EBBC7 /* openBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3C52C127D4438D002EBBC7 /* openBankTests.swift */; };
 		6F56446B27D17C4800BB91EA /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56446A27D17C4800BB91EA /* CharacterCell.swift */; };
 		6F56446D27D17C7E00BB91EA /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F56446C27D17C7E00BB91EA /* CharacterCell.xib */; };
@@ -48,8 +47,6 @@
 
 /* Begin PBXFileReference section */
 		6F089AB027D2FA1000306074 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		6F089AB627D3162D00306074 /* spiderman404.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = spiderman404.json; path = ../../../../../Downloads/spiderman404.json; sourceTree = "<group>"; };
-		6F089AB827D3165400306074 /* ironMan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ironMan.json; path = ../../../../../Downloads/ironMan.json; sourceTree = "<group>"; };
 		6F089ABA27D31EC200306074 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		6F14345327CFE51700697A77 /* openBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F14345627CFE51700697A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +60,7 @@
 		6F14347127CFEA6700697A77 /* CharactersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRequest.swift; sourceTree = "<group>"; };
 		6F14347327CFEAB700697A77 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		6F14347527CFEAD300697A77 /* CharactersListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListResponse.swift; sourceTree = "<group>"; };
+		6F258E6527D6118A005159CF /* spiderman404.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spiderman404.json; sourceTree = "<group>"; };
 		6F3C52BF27D4438D002EBBC7 /* openBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3C52C127D4438D002EBBC7 /* openBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openBankTests.swift; sourceTree = "<group>"; };
 		6F56446A27D17C4800BB91EA /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
@@ -100,8 +98,7 @@
 		6F089AB527D3160000306074 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				6F089AB827D3165400306074 /* ironMan.json */,
-				6F089AB627D3162D00306074 /* spiderman404.json */,
+				6F258E6527D6118A005159CF /* spiderman404.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -332,11 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F14346327CFE51900697A77 /* LaunchScreen.storyboard in Resources */,
+				6F258E6627D6118A005159CF /* spiderman404.json in Resources */,
 				6F14346B27CFE68400697A77 /* CharactersListViewController.xib in Resources */,
-				6F089AB927D3165400306074 /* ironMan.json in Resources */,
 				6F14346027CFE51900697A77 /* Assets.xcassets in Resources */,
 				6F99449627D2DE11001E26EB /* DetailView.xib in Resources */,
-				6F089AB727D3162D00306074 /* spiderman404.json in Resources */,
 				6F56447B27D19BFE00BB91EA /* CharacterDetailViewController.xib in Resources */,
 				6F56446D27D17C7E00BB91EA /* CharacterCell.xib in Resources */,
 			);
