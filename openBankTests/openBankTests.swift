@@ -10,17 +10,6 @@ import XCTest
 
 class openBankTests: XCTestCase {
     
-    override func setUpWithError() throws {}
-
-    override func tearDownWithError() throws {}
-
-    func testExample() throws {}
-
-    func testPerformanceExample() throws {
-        measure {
-        }
-    }
-    
     func testGetOneCharacter() throws {
         let expectation = XCTestExpectation(description: "Request of one character")
         CharacterRequest(1009144).fetchCharacter { error, data in

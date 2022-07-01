@@ -25,6 +25,4 @@ class CharacterCell: UITableViewCell {
         self.characterImageView.contentMode = .scaleAspectFill
         self.characterImageView.loadFrom(URLAddress: imageUrl)
     }
-    
-    
 }

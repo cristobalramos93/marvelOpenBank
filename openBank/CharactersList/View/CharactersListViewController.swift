@@ -29,6 +29,7 @@ class CharactersListViewController: UIViewController {
         self.errorView.isHidden = true
         self.reloadButton.isHidden = true
     }
+    
     @IBAction func didTapOnReload(_ sender: Any) {
         self.presenter.viewDidLoad()
     }

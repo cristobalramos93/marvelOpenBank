@@ -20,10 +20,11 @@ class CharactersListRequest {
         let queryTs = URLQueryItem(name: "ts", value: ts)
         let queryKey = URLQueryItem(name: "apikey", value: publicKey)
         let queryMd5 = URLQueryItem(name: "hash", value: md5)
+        let limit = URLQueryItem(name: "limit", value: "51")
         urlComponents.scheme = "https"
         urlComponents.host = "gateway.marvel.com"
         urlComponents.path = "/v1/public/characters"
-        urlComponents.queryItems = [queryTs, queryKey, queryMd5]
+        urlComponents.queryItems = [limit, queryTs, queryKey, queryMd5]
         self.api = API(url: urlComponents.url ?? URL(fileURLWithPath: ""))
     }
     
