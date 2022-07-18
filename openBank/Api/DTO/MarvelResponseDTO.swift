@@ -1,35 +1,33 @@
 //
-//  Response.swift
+//  MarvelResponseDTO.swift
 //  openBank
 //
 //  Created by Cristobal Ramos on 2/3/22.
 //
 import Foundation
-// MARK: - Welcome
-struct MarvelCharacterList: Codable {
+
+struct MarvelResponseDTO: Codable {
     let code: Int
     let status, copyright, attributionText, attributionHTML: String
     let etag: String
-    let data: DataClass
+    let data: DataClassDTO
 }
 
-// MARK: - DataClass
-struct DataClass: Codable {
+struct DataClassDTO: Codable {
     let offset, limit, total, count: Int
-    let results: [CharactersList]
+    let results: [CharacterDTO]
 }
 
-// MARK: - Result
-struct CharactersList: Codable {
+struct CharacterDTO: Codable {
     let id: Int
     let name, resultDescription: String
     let modified: String
-    let thumbnail: Thumbnail
+    let thumbnail: ThumbnailDTO
     let resourceURI: String
-    let comics, series: Comics
-    let stories: Stories
-    let events: Comics
-    let urls: [URLElement]
+    let comics, series: ComicsDTO
+    let stories: StoriesDTO
+    let events: ComicsDTO
+    let urls: [URLElementDTO]
 
     enum CodingKeys: String, CodingKey {
         case id, name
@@ -38,45 +36,34 @@ struct CharactersList: Codable {
     }
 }
 
-// MARK: - Comics
-struct Comics: Codable {
+struct ComicsDTO: Codable {
     let available: Int
     let collectionURI: String
-    let items: [ComicsItem]
+    let items: [ComicsItemDTO]
     let returned: Int
 }
 
-// MARK: - ComicsItem
-struct ComicsItem: Codable {
+struct ComicsItemDTO: Codable {
     let resourceURI: String
     let name: String
 }
 
-// MARK: - Stories
-struct Stories: Codable {
+struct StoriesDTO: Codable {
     let available: Int
     let collectionURI: String
-    let items: [StoriesItem]
+    let items: [StoriesItemDTO]?
     let returned: Int
 }
 
-// MARK: - StoriesItem
-struct StoriesItem: Codable {
+struct StoriesItemDTO: Codable {
     let resourceURI: String
     let name: String
-    let type: ItemType
+    let type: String
 }
 
-enum ItemType: String, Codable {
-    case cover = "cover"
-    case empty = ""
-    case interiorStory = "interiorStory"
-}
-
-// MARK: - Thumbnail
-struct Thumbnail: Codable {
+struct ThumbnailDTO: Codable {
     let path: String
-    let thumbnailExtension: Extension
+    let thumbnailExtension: ExtensionDTO
 
     enum CodingKeys: String, CodingKey {
         case path
@@ -84,18 +71,18 @@ struct Thumbnail: Codable {
     }
 }
 
-enum Extension: String, Codable {
+enum ExtensionDTO: String, Codable {
     case gif = "gif"
     case jpg = "jpg"
+    case png = "png"
 }
 
-// MARK: - URLElement
-struct URLElement: Codable {
-    let type: URLType
+struct URLElementDTO: Codable {
+    let type: URLTypeDTO
     let url: String
 }
 
-enum URLType: String, Codable {
+enum URLTypeDTO: String, Codable {
     case comiclink = "comiclink"
     case detail = "detail"
     case wiki = "wiki"

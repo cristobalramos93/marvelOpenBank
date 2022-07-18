@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F06A22B2883073D000FDA72 /* CharacterList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F06A22A2883073D000FDA72 /* CharacterList.json */; };
 		6F089AB127D2FA1000306074 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F089AB027D2FA1000306074 /* UIView+Extension.swift */; };
 		6F089ABB27D31EC200306074 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F089ABA27D31EC200306074 /* UIViewController+Extension.swift */; };
 		6F14345727CFE51700697A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14345627CFE51700697A77 /* AppDelegate.swift */; };
@@ -16,21 +17,26 @@
 		6F14346327CFE51900697A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F14346127CFE51900697A77 /* LaunchScreen.storyboard */; };
 		6F14346B27CFE68400697A77 /* CharactersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F14346A27CFE68400697A77 /* CharactersListViewController.xib */; };
 		6F14347027CFEA1900697A77 /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14346F27CFEA1900697A77 /* CharactersListPresenter.swift */; };
-		6F14347227CFEA6700697A77 /* CharactersListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347127CFEA6700697A77 /* CharactersListRequest.swift */; };
+		6F14347227CFEA6700697A77 /* MarvelApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347127CFEA6700697A77 /* MarvelApiRequest.swift */; };
 		6F14347427CFEAB700697A77 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347327CFEAB700697A77 /* Api.swift */; };
-		6F14347627CFEAD300697A77 /* CharactersListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347527CFEAD300697A77 /* CharactersListResponse.swift */; };
+		6F14347627CFEAD300697A77 /* MarvelResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F14347527CFEAD300697A77 /* MarvelResponseDTO.swift */; };
 		6F258E6627D6118A005159CF /* spiderman404.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F258E6527D6118A005159CF /* spiderman404.json */; };
-		6F3C52C227D4438D002EBBC7 /* openBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3C52C127D4438D002EBBC7 /* openBankTests.swift */; };
+		6F3C52C227D4438D002EBBC7 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3C52C127D4438D002EBBC7 /* ApiTests.swift */; };
+		6F4121BF28825C110055220F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4121BE28825C110055220F /* Kingfisher */; };
+		6F4C56002884CD1D0053132A /* CharacterDescription.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F4C55FF2884CD1D0053132A /* CharacterDescription.json */; };
+		6F4C56022884D2870053132A /* TestCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C56012884D2870053132A /* TestCharacterDetailViewController.swift */; };
+		6F4C56052884DAEF0053132A /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4C56042884DAEF0053132A /* CharacterData.swift */; };
+		6F50FCD2288275300022D1E8 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F50FCD1288275300022D1E8 /* loader.json */; };
 		6F56446B27D17C4800BB91EA /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56446A27D17C4800BB91EA /* CharacterCell.swift */; };
 		6F56446D27D17C7E00BB91EA /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F56446C27D17C7E00BB91EA /* CharacterCell.xib */; };
-		6F56447027D1805D00BB91EA /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56446F27D1805D00BB91EA /* ImageView+Extension.swift */; };
-		6F56447327D194A100BB91EA /* CharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56447227D194A100BB91EA /* CharacterRequest.swift */; };
 		6F56447727D1994D00BB91EA /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F56447627D1994D00BB91EA /* CharacterDetailViewController.swift */; };
 		6F56447B27D19BFE00BB91EA /* CharacterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F56447A27D19BFE00BB91EA /* CharacterDetailViewController.xib */; };
 		6F73AD0827D6CC890019FC3E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6F73AD0727D6CC890019FC3E /* Lottie */; };
 		6F99449427D2DD7B001E26EB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F99449327D2DD7B001E26EB /* DetailView.swift */; };
 		6F99449627D2DE11001E26EB /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F99449527D2DE11001E26EB /* DetailView.xib */; };
-		6FF1634627D02EB5002DA6B9 /* CharacterDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1634527D02EB5002DA6B9 /* CharacterDetailResponse.swift */; };
+		6FCEDCE4288393B6007FF170 /* CharactersListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCEDCE3288393B6007FF170 /* CharactersListPresenterMock.swift */; };
+		6FCEDCE62883B5DA007FF170 /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCEDCE52883B5DA007FF170 /* ApiMock.swift */; };
+		6FD05D3428843735001F07B6 /* TestCharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD05D3328843735001F07B6 /* TestCharactersListViewController.swift */; };
 		6FF1634827D034E7002DA6B9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1634727D034E7002DA6B9 /* String+Extension.swift */; };
 		6FF1634A27D0351D002DA6B9 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1634927D0351D002DA6B9 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F06A22A2883073D000FDA72 /* CharacterList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterList.json; sourceTree = "<group>"; };
 		6F089AB027D2FA1000306074 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		6F089ABA27D31EC200306074 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		6F14345327CFE51700697A77 /* openBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,21 +64,25 @@
 		6F14346427CFE51900697A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F14346A27CFE68400697A77 /* CharactersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersListViewController.xib; sourceTree = "<group>"; };
 		6F14346F27CFEA1900697A77 /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
-		6F14347127CFEA6700697A77 /* CharactersListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRequest.swift; sourceTree = "<group>"; };
+		6F14347127CFEA6700697A77 /* MarvelApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelApiRequest.swift; sourceTree = "<group>"; };
 		6F14347327CFEAB700697A77 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		6F14347527CFEAD300697A77 /* CharactersListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListResponse.swift; sourceTree = "<group>"; };
+		6F14347527CFEAD300697A77 /* MarvelResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelResponseDTO.swift; sourceTree = "<group>"; };
 		6F258E6527D6118A005159CF /* spiderman404.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spiderman404.json; sourceTree = "<group>"; };
 		6F3C52BF27D4438D002EBBC7 /* openBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F3C52C127D4438D002EBBC7 /* openBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openBankTests.swift; sourceTree = "<group>"; };
+		6F3C52C127D4438D002EBBC7 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		6F4C55FF2884CD1D0053132A /* CharacterDescription.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterDescription.json; sourceTree = "<group>"; };
+		6F4C56012884D2870053132A /* TestCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		6F4C56042884DAEF0053132A /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
+		6F50FCD1288275300022D1E8 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		6F56446A27D17C4800BB91EA /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		6F56446C27D17C7E00BB91EA /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
-		6F56446F27D1805D00BB91EA /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
-		6F56447227D194A100BB91EA /* CharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequest.swift; sourceTree = "<group>"; };
 		6F56447627D1994D00BB91EA /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		6F56447A27D19BFE00BB91EA /* CharacterDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailViewController.xib; sourceTree = "<group>"; };
 		6F99449327D2DD7B001E26EB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6F99449527D2DE11001E26EB /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		6FF1634527D02EB5002DA6B9 /* CharacterDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailResponse.swift; sourceTree = "<group>"; };
+		6FCEDCE3288393B6007FF170 /* CharactersListPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenterMock.swift; sourceTree = "<group>"; };
+		6FCEDCE52883B5DA007FF170 /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
+		6FD05D3328843735001F07B6 /* TestCharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCharactersListViewController.swift; sourceTree = "<group>"; };
 		6FF1634727D034E7002DA6B9 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		6FF1634927D0351D002DA6B9 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4121BF28825C110055220F /* Kingfisher in Frameworks */,
 				6F73AD0827D6CC890019FC3E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +110,7 @@
 		6F089AB527D3160000306074 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				6F50FCD1288275300022D1E8 /* loader.json */,
 				6F258E6527D6118A005159CF /* spiderman404.json */,
 			);
 			path = Lottie;
@@ -124,18 +137,17 @@
 		6F14345527CFE51700697A77 /* openBank */ = {
 			isa = PBXGroup;
 			children = (
+				6F4C56032884DACC0053132A /* Data */,
+				6F4121C028826A0A0055220F /* Api */,
 				6F089AB527D3160000306074 /* Lottie */,
 				6F14346C27CFE9BF00697A77 /* CharactersList */,
 				6F56447527D1993900BB91EA /* CharacterDetail */,
-				6F56447427D198FA00BB91EA /* Response */,
-				6F56447127D1948F00BB91EA /* Request */,
 				6F56446E27D1804400BB91EA /* Extensions */,
 				6F14345627CFE51700697A77 /* AppDelegate.swift */,
 				6F14345827CFE51700697A77 /* SceneDelegate.swift */,
 				6F14345F27CFE51900697A77 /* Assets.xcassets */,
 				6F14346127CFE51900697A77 /* LaunchScreen.storyboard */,
 				6F14346427CFE51900697A77 /* Info.plist */,
-				6F14347327CFEAB700697A77 /* Api.swift */,
 			);
 			path = openBank;
 			sourceTree = "<group>";
@@ -170,9 +182,29 @@
 		6F3C52C027D4438D002EBBC7 /* openBankTests */ = {
 			isa = PBXGroup;
 			children = (
-				6F3C52C127D4438D002EBBC7 /* openBankTests.swift */,
+				6FD05D3728843CE3001F07B6 /* Test */,
+				6FD05D3628843CD9001F07B6 /* JSON */,
+				6FD05D3528843CC7001F07B6 /* Mock */,
 			);
 			path = openBankTests;
+			sourceTree = "<group>";
+		};
+		6F4121C028826A0A0055220F /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6F14347327CFEAB700697A77 /* Api.swift */,
+				6F56447127D1948F00BB91EA /* Request */,
+				6F56447427D198FA00BB91EA /* DTO */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		6F4C56032884DACC0053132A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6F4C56042884DAEF0053132A /* CharacterData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		6F56446927D17C1A00BB91EA /* ViewComponents */ = {
@@ -189,7 +221,6 @@
 			children = (
 				6FF1634727D034E7002DA6B9 /* String+Extension.swift */,
 				6FF1634927D0351D002DA6B9 /* Date+Extension.swift */,
-				6F56446F27D1805D00BB91EA /* ImageView+Extension.swift */,
 				6F089AB027D2FA1000306074 /* UIView+Extension.swift */,
 				6F089ABA27D31EC200306074 /* UIViewController+Extension.swift */,
 			);
@@ -199,19 +230,17 @@
 		6F56447127D1948F00BB91EA /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				6F14347127CFEA6700697A77 /* CharactersListRequest.swift */,
-				6F56447227D194A100BB91EA /* CharacterRequest.swift */,
+				6F14347127CFEA6700697A77 /* MarvelApiRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
 		};
-		6F56447427D198FA00BB91EA /* Response */ = {
+		6F56447427D198FA00BB91EA /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				6F14347527CFEAD300697A77 /* CharactersListResponse.swift */,
-				6FF1634527D02EB5002DA6B9 /* CharacterDetailResponse.swift */,
+				6F14347527CFEAD300697A77 /* MarvelResponseDTO.swift */,
 			);
-			path = Response;
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		6F56447527D1993900BB91EA /* CharacterDetail */ = {
@@ -241,6 +270,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6FD05D3528843CC7001F07B6 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				6FCEDCE3288393B6007FF170 /* CharactersListPresenterMock.swift */,
+				6FCEDCE52883B5DA007FF170 /* ApiMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		6FD05D3628843CD9001F07B6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				6F06A22A2883073D000FDA72 /* CharacterList.json */,
+				6F4C55FF2884CD1D0053132A /* CharacterDescription.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		6FD05D3728843CE3001F07B6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6F3C52C127D4438D002EBBC7 /* ApiTests.swift */,
+				6F4C56012884D2870053132A /* TestCharacterDetailViewController.swift */,
+				6FD05D3328843735001F07B6 /* TestCharactersListViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +316,7 @@
 			name = openBank;
 			packageProductDependencies = (
 				6F73AD0727D6CC890019FC3E /* Lottie */,
+				6F4121BE28825C110055220F /* Kingfisher */,
 			);
 			productName = openBank;
 			productReference = 6F14345327CFE51700697A77 /* openBank.app */;
@@ -312,6 +370,7 @@
 			mainGroup = 6F14344A27CFE51700697A77;
 			packageReferences = (
 				6F73AD0627D6CC890019FC3E /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				6F4121BD28825C110055220F /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 6F14345427CFE51700697A77 /* Products */;
 			projectDirPath = "";
@@ -330,6 +389,7 @@
 			files = (
 				6F14346327CFE51900697A77 /* LaunchScreen.storyboard in Resources */,
 				6F258E6627D6118A005159CF /* spiderman404.json in Resources */,
+				6F50FCD2288275300022D1E8 /* loader.json in Resources */,
 				6F14346B27CFE68400697A77 /* CharactersListViewController.xib in Resources */,
 				6F14346027CFE51900697A77 /* Assets.xcassets in Resources */,
 				6F99449627D2DE11001E26EB /* DetailView.xib in Resources */,
@@ -342,6 +402,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F06A22B2883073D000FDA72 /* CharacterList.json in Resources */,
+				6F4C56002884CD1D0053132A /* CharacterDescription.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,21 +416,19 @@
 			files = (
 				6F14347427CFEAB700697A77 /* Api.swift in Sources */,
 				6FF1634827D034E7002DA6B9 /* String+Extension.swift in Sources */,
+				6F4C56052884DAEF0053132A /* CharacterData.swift in Sources */,
 				6F14347027CFEA1900697A77 /* CharactersListPresenter.swift in Sources */,
 				6F56446B27D17C4800BB91EA /* CharacterCell.swift in Sources */,
 				6F089ABB27D31EC200306074 /* UIViewController+Extension.swift in Sources */,
 				6F14345B27CFE51700697A77 /* CharactersListViewController.swift in Sources */,
-				6F14347227CFEA6700697A77 /* CharactersListRequest.swift in Sources */,
+				6F14347227CFEA6700697A77 /* MarvelApiRequest.swift in Sources */,
 				6FF1634A27D0351D002DA6B9 /* Date+Extension.swift in Sources */,
 				6F089AB127D2FA1000306074 /* UIView+Extension.swift in Sources */,
-				6F56447327D194A100BB91EA /* CharacterRequest.swift in Sources */,
 				6F14345727CFE51700697A77 /* AppDelegate.swift in Sources */,
 				6F99449427D2DD7B001E26EB /* DetailView.swift in Sources */,
 				6F14345927CFE51700697A77 /* SceneDelegate.swift in Sources */,
-				6F14347627CFEAD300697A77 /* CharactersListResponse.swift in Sources */,
+				6F14347627CFEAD300697A77 /* MarvelResponseDTO.swift in Sources */,
 				6F56447727D1994D00BB91EA /* CharacterDetailViewController.swift in Sources */,
-				6F56447027D1805D00BB91EA /* ImageView+Extension.swift in Sources */,
-				6FF1634627D02EB5002DA6B9 /* CharacterDetailResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +436,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F3C52C227D4438D002EBBC7 /* openBankTests.swift in Sources */,
+				6FD05D3428843735001F07B6 /* TestCharactersListViewController.swift in Sources */,
+				6FCEDCE4288393B6007FF170 /* CharactersListPresenterMock.swift in Sources */,
+				6F3C52C227D4438D002EBBC7 /* ApiTests.swift in Sources */,
+				6F4C56022884D2870053132A /* TestCharacterDetailViewController.swift in Sources */,
+				6FCEDCE62883B5DA007FF170 /* ApiMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +720,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6F4121BD28825C110055220F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		6F73AD0627D6CC890019FC3E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
@@ -667,6 +739,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6F4121BE28825C110055220F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4121BD28825C110055220F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		6F73AD0727D6CC890019FC3E /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6F73AD0627D6CC890019FC3E /* XCRemoteSwiftPackageReference "lottie-ios" */;

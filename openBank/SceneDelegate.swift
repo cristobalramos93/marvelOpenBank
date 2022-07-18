@@ -17,7 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = CharactersListViewController()
+        let viewController = CharactersListViewController()
+        viewController.presenter = CharactersListPresenter(viewController, api: MarvelApiRequest())
+        window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }

@@ -1,36 +1,27 @@
 //
-//  CharactersListPresenter.swift
-//  openBank
+//  CharactersListPresenterMock.swift
+//  openBankTests
 //
-//  Created by Cristobal Ramos on 2/3/22.
+//  Created by Cristobal Ramos on 17/7/22.
 //
 
 import Foundation
+@testable import openBank
 
-protocol CharactersListPresenterProtocol: AnyObject {
-    var view: CharactersListViewProtocol? { get set }
-    func viewDidLoad()
-    func loadCharacter(_ id: Int)
-    func reloadCharacterList(offset: Int, characterList: [CharacterData], completion: @escaping () -> Void)
-}
-
-class CharactersListPresenter {
+class CharactersListPresenterMock: CharactersListPresenterProtocol {
+    
     weak var view: CharactersListViewProtocol?
-    private var api: MarvelApiRequestProtocol
+    var api: MarvelApiRequestProtocol
     
     init(_ view: CharactersListViewProtocol, api: MarvelApiRequestProtocol) {
         self.view = view
         self.api = api
     }
-}
-
-extension CharactersListPresenter: CharactersListPresenterProtocol {
+    
     func loadCharacter(_ id: Int) {
-        self.api.fetchCharacter(id: id) { error, character in
+        api.fetchCharacter(id: id) { error, character in
             guard let character = character else {
-                DispatchQueue.main.async {
-                    self.view?.showError()
-                }
+                self.view?.showError()
                 return
             }
             self.view?.goToCharacterDetail(character)
@@ -43,7 +34,7 @@ extension CharactersListPresenter: CharactersListPresenterProtocol {
     
     func reloadCharacterList(offset: Int, characterList: [CharacterData], completion: @escaping () -> Void) {
         var list = characterList
-        self.api.fetchCharactersList(offset: offset) { error, characterListPagination, total in
+        api.fetchCharactersList(offset: offset) { error, characterListPagination, total in
             if let _ = error {
                 completion()
                 self.view?.showError()
@@ -56,11 +47,10 @@ extension CharactersListPresenter: CharactersListPresenterProtocol {
     }
 }
 
-private extension CharactersListPresenter {
-    
+private extension CharactersListPresenterMock {
     func loadCharacterList() {
-        self.api.fetchCharactersList(offset: 0) { error, characterList, total in
-            if let _ = error {
+        api.fetchCharactersList(offset: 0) { error, characterList, total in
+            if let _ = error, characterList.isEmpty {
                 self.view?.showError()
             } else {
                 self.view?.setTotalCharacters(total)

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class CharacterCell: UITableViewCell {
     
@@ -23,6 +24,7 @@ class CharacterCell: UITableViewCell {
         self.characterImageView.layer.cornerRadius = self.characterImageView.frame.height / 2
         self.characterImageView.clipsToBounds = true
         self.characterImageView.contentMode = .scaleAspectFill
-        self.characterImageView.loadFrom(URLAddress: imageUrl)
+        let url = URL(string: imageUrl)
+        self.characterImageView.kf.setImage(with: url)
     }
 }
